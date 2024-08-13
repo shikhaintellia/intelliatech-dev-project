@@ -1,0 +1,111 @@
+.add-dev {
+	width: 100%;
+	height: 100%;
+    gap: 3rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: black;
+	overflow: hidden;
+}
+
+.add-dev form {
+	width: 80%;
+	height: 60%;
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+	align-items: center;
+
+}
+.add-dev .div-1 {
+	width: 40%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.add-dev .div-2 {
+	padding: 2rem 0;
+	width: 40%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	gap: 1rem;
+}
+
+.add-dev div input {
+	padding: 1rem;
+	background-color: #fff;
+	border: 1px solid #BD2124;
+	border-radius: 0.5rem;
+}
+
+.add-dev div select {
+	padding: 1rem;
+	background-color: #fff;
+	border: 1px solid #BD2124;
+	border-radius: 0.5rem;
+}
+
+.add-dev div select option {
+	padding: 1rem;
+	background-color: #fff;
+	color: rgb(43, 43, 43);
+	border: 1px solid rgb(59, 59, 59);
+}
+.add-dev div input::placeholder {
+	color: rgb(73, 73, 73);
+}
+
+.check-box {
+	padding: 1rem;
+	padding-left: 0;
+}
+.check-box label {
+	margin-left: 1rem;
+}
+.check-box input {
+	height: 1.5rem;
+	width: 1.5rem;
+	background-color: #fff;
+}
+
+button {
+	background-color: #BD2124;
+	color: white;
+	font-weight: 700;
+	padding: 1rem 2rem;
+	border: none;
+	border-radius: 0.5rem;
+}
+button:hover{
+	background:#bd2124d4;
+}
+
+.loader {
+	border: 8px solid #d9d9d9; 
+	border-top: 8px solid #000000; 
+	border-radius: 50%;
+	width: 4rem;
+	height: 4rem;
+	animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.add-dev form {
+		flex-direction: column;
+	}
+}

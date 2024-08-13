@@ -1,0 +1,94 @@
+/* .resume-bg {
+	  position: absolute;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(7px);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.resume-btn{
+    width: 100%;
+    height: 100%;
+}
+.resume-popup {
+	bottom: 0;
+	z-index: 100;
+	position: absolute;
+
+}
+.center-div button{
+ margin: 1rem;
+}
+
+.image-viewer{
+max-height:20px;
+max-width:20px
+} */
+
+.resume-bg {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(7px);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .resume-btn {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .resume-popup {
+    bottom: 0;
+    z-index: 100;
+    position: absolute;
+  }
+  
+  .center-div button {
+    margin: 1rem;
+  }
+  
+  /* Responsive styles for image viewer */
+  .image-viewer {
+    max-height: 80vh; /* Adjust the height to be a percentage of viewport height */
+    max-width: 60vw;  /* Adjust the width to be a percentage of viewport width */
+    overflow: auto;   /* Enable scrolling if content exceeds container size */
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: white; /* Optional: background color for better visibility */
+    border: 1px solid #ccc; /* Optional: border for better visibility */
+  }
+  
+  .image-viewer img {
+    display: block;
+    max-height: 100%; 
+    /* Ensure the image does not exceed the container height */
+    max-width: 100%;  /* Ensure the image does not exceed the container width */
+    width: auto;
+    height: auto;
+    object-fit: contain; 
+    /* Maintain the aspect ratio of the image */
+  }
+  
+  /* Media Queries for better responsiveness */
+  @media screen and (max-width: 768px) {
+    .image-viewer {
+      max-width: 95vw;
+      max-height: 70vh;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .image-viewer {
+      max-width: 100vw;
+      max-height: 60vh;
+    }
+  }
+  
